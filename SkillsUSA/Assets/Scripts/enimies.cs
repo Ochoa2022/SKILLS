@@ -16,9 +16,9 @@ public class enimies : MonoBehaviour
 
     }
     void Update()
-    {timer -= Time.deltaTime;
+    { timer -= Time.deltaTime;
 
-        if (timer< 0)
+        if (timer < 0)
         {
             direction = -direction;
             timer = change;
@@ -31,7 +31,7 @@ public class enimies : MonoBehaviour
 void FixedUpdate()
     {
         Vector2 posi = rb2D.position;
-        posi.x = posi.x + Time.deltaTime * speed;
+        posi.x = posi.x + Time.deltaTime * speed * direction;
 
         rb2D.MovePosition(posi);
     }
