@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class ListMessages : MonoBehaviour
 {
-    public TextMeshProUGI message = null;
+    //public TextMeshProUGI message = null;
     public UnityEvent OnComplete = new UnityEvent();
 
     void Start()
